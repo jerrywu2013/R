@@ -1,0 +1,8 @@
+#Install RMySQL on Ubuntu 14.04
+####Problem : installation of package ‘RMySQL’ had non-zero exit status
+```
+sudo apt-get install libdbd-mysql libmysqlclient-dev
+whereis mysql
+ls /tmp/
+R CMD INSTALL --configure-args='--with-mysql-dir=/usr/lib/mysql' /tmp/RtmpL6Hm8l/downloaded_packages/RMySQL_0.10.6.tar.gz
+```
